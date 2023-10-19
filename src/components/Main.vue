@@ -20,10 +20,12 @@
 
   <section>
     <div class="look_organic">
+
       <div class="description d-flex">
         <p class="text_full"><span>Look what</span> consumer power has done with <span>organic food;</span> we can do the same with clothes.</p>
         <p class="text">I have a need to make these sorts of connections literal sometimes, and a vehicle often helps to do that.<br>I have a relationship to hosting culture. <span>It isn't really about it helps to do that. I gave a relationship to hosting culuter.</span><br><br>Need to make these sorts of connections literal sometimes, and a vehicle often helps to do that, i have a relationship to hosting culture.</p>
       </div>
+
       <div class="image_food">
         <div class="row mt-4">
           <div class="col d-flex justify-content-between ">
@@ -34,12 +36,108 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
   <section>
-    <div class="trending_organic">
-      trending_organic
+    <div class="trending_organic d-flex flex-column">
+      <div class="fr_container text-center">
+        <h4>trending online store</h4>
+        <h1>gogrin all <span>organic</span> food</h1>
+        <ul class="d-flex justify-content-center ">
+          <li>all product</li>
+          <li>apple</li>
+          <li>food</li>
+          <li>orange</li>
+          <li>vegetable</li>
+        </ul>
+
+        <div class="d-flex justify-content-between flex-wrap">
+
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s5.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Fress Apple</p>
+              <span>$18</span>
+            </div>
+          </div>
+
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s2.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Fress Cobies</p>
+              <span>$19</span><span>$17</span>
+            </div>
+
+          </div>
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s8.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Fresh Watermelon</p>
+              <span>$15</span>
+            </div>
+
+          </div>
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s1.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Organic Juice</p>
+              <span>$20</span><span>$15</span>
+            </div>
+
+          </div>
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s4.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Fresh Blueberries</p>
+              <span>$19</span><span>$14</span>
+            </div>
+
+          </div>
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s10.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Organic Letus</p>
+              <span>$23</span>
+            </div>
+
+          </div>
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s9.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Red Gajor</p>
+              <span>$29</span><span>$26</span>
+            </div>
+
+          </div>
+          <div class="card_fr">
+            <div class="card_image">
+              <img src="../assets/img/s7.jpg" alt="">
+            </div>
+            <div class="card_info">
+              <p>Naga Pepper</p>
+              <span>$21</span>
+            </div>
+
+          </div>
+        </div>
+        <button class="btn">all products</button>
+      </div>
     </div>
   </section>
 
@@ -111,7 +209,6 @@
 @use '../scss/variables' as *;
 .look_organic{
   width: $container_min;
-  height: 500px;
   margin: 0 auto;
   padding: 120px 0;
   span{
@@ -132,13 +229,78 @@
     padding-right: 15px;
   }
 }
-
 .trending_organic{
   width: $container_max;
-  height: 800px;
   margin: 0 auto;
   background-color: brown;
-  background-image: '../assets/img/shop-bg-img.jpg';
+  background-image: url('../assets/img/shop-bg-img.jpg');
+  background-size: cover;
+  .fr_container{
+    width: $container_min;
+    margin: 0 auto;
+    h4{
+      text-align: center;
+      color: $yellow;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding-top: 20px;
+    }
+    h1{
+      text-align: center;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: white;
+      span{
+        color: $yellow;
+      }
+    }
+    ul{
+      color: white;
+      text-transform: capitalize;
+      margin: 50px 0;
+      padding: 0;
+      li{
+        margin: 0 35px;
+      }
+    }
+    .card_fr{
+      width: calc((100% - 100px) / 4);
+      aspect-ratio: 1;
+      margin-bottom: 50px;
+      .card_image{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+      .card_info{
+        text-align: center;
+        p{
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: white;
+          margin: 20px 0;
+        }
+        span{
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $yellow;
+          margin-right: 5px;
+        }
+      }
+    }
+    .btn{
+    margin-top: 30px;
+    padding: 20px 80px;
+    background-color: $yellow;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0 20px;
+    margin-bottom: 100px;
+
+    }
+  }
 }
 
 .comment_manager{
