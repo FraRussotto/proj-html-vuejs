@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/barlow-condensed": "^5.0.8",
+    "@fontsource/oswald": "^5.0.15",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.3.2",
     "vue": "^3.3.4"

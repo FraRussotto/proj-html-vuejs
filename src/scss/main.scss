@@ -1,9 +1,15 @@
 @use './variables' as *;
 
 @import 'bootstrap/scss/bootstrap';
+@import 'node_modules/@fontsource/barlow-condensed/400.css';
+@import 'node_modules/@fontsource/barlow-condensed/800.css';
 
 body{
+  font-family: $main-font;
   ul{
     list-style-type: none;
+  }
+  a{
+    text-decoration: none;
   }
 }

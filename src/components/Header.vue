@@ -28,38 +28,44 @@
           </div>
           <div class="social ms-1 d-flex">
             <ul class="d-flex">
-              <a href="#"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-              <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
-              <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-              <a href="#"><li><i class="fa-brands fa-pinterest-p"></i></li></a>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="header_bottom">
-      <div class="fr_container d-flex justify-content-between align-items-center">
-        <div class="left d-flex">
-          <div class="logo_header">Logo</div>
-          <div class="menu_header">
-            <ul class="d-flex">
-              <li>menu</li>
-              <li>menu</li>
-              <li>menu</li>
-              <li>menu</li>
-              <li>menu</li>
-              <li>menu</li>
-            </ul>
-          </div>
+    <div class="header_bottom fr_container d-flex justify-content-between align-items-center">
+      <div class="left d-flex align-items-center ">
+        <div class="logo_header">
+          <img src="../assets/img/logo.png" alt="">
         </div>
-        <div class="right d-flex">
-          <div class="button_search"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <div class="cart">Cart</div>
-          <div class="button_order btn btn-warning">
-            Bottone
-          </div>
+        <div class="menu_header">
+          <ul class="d-flex">
+              <li><a href="#">home<i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="#">about<i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="#">service</a></li>
+              <li><a href="#">portfolio<i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="#">blog <i class="fa-solid fa-chevron-down"></i></a></li>
+              <li><a href="#">contact</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="right d-flex align-items-center">
+          <div class="button_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="cart d-flex">
+            <i class="fa-solid fa-cart-shopping"></i>
+              <span>0</span>
+          </div>
+          <div class="button_order">
+            <a href="#"><button class="btn">order now</button></a>
+          </div>
       </div>
     </div>
 
@@ -80,16 +86,20 @@
 
   .left{
     i{
+      font-size: 0.8rem;
       margin-right: 5px;
     }
     .location{
-      margin-right: 25px;
+      margin-right: 50px;
     }
   }
 
   .right{
     align-items: center;
     .hours_active{
+      i{
+        font-size: .9rem;
+      }
       span{
         margin-left: 10px;
       }
@@ -100,7 +110,7 @@
         a{
           color: white;
           line-height: 45px;
-          margin-left: 10px;
+          margin-left: 20px;
         }
       }
     }
@@ -109,7 +119,66 @@
 
 .header_bottom{
   height: 100px;
-  color: black;
-  background-color: lighten($green, 50%);
+  .left{
+    align-items: center;
+    .logo_header{
+      img{
+        width: 200px;
+      }
+    }
+    .menu_header{
+      margin-left: 100px;
+      ul{
+        margin-bottom: 0;
+        a{
+          font-size: 1.1rem;
+          color: black;
+          text-transform: uppercase;
+          margin-right: 35px;
+          i{
+            margin-left: 10px;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  .right{
+    .button_search{
+      font-size: 1.2rem;
+      background-color: $yellow;
+      color: white;
+      line-height: 16px;
+      padding: 10px;
+      border-radius: 50%;
+    }
+    .cart{
+      position: relative;
+      margin: 0 30px;
+      font-size: 1.4rem;
+      color: $green;
+      span{
+        font-size: 1.2rem;
+        position: absolute;
+        top: -10px;
+        right: -14px;
+        line-height: 10px;
+        color: white;
+        background-color: $yellow;
+        padding: 7px;
+        border-radius: 50%;
+      }
+    }
+    .button_order{
+      button{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        background-color: $yellow;
+        padding: 12px 25px;
+        border-radius: 0 25px;
+        color: white;
+      }
+    }
+  }
 }
 </style>
