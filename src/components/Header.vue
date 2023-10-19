@@ -14,7 +14,7 @@
         <div class="left d-flex">
           <div class="location">
             <i class="fa-solid fa-location-dot"></i>
-            <span>Palermo, Sicilia, Italia</span>
+            <span>North baukhula, tala, USA</span>
           </div>
           <div class="email">
             <i class="fa-solid fa-envelope"></i>
@@ -29,8 +29,8 @@
           <div class="social ms-1 d-flex">
             <ul class="d-flex">
               <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
               <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
               <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
             </ul>
           </div>
@@ -57,11 +57,13 @@
       </div>
       <div class="right d-flex align-items-center">
           <div class="button_search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
           <div class="cart d-flex">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
               <span>0</span>
+            </a>
           </div>
           <div class="button_order">
             <a href="#"><button class="btn">order now</button></a>
@@ -87,10 +89,10 @@
   .left{
     i{
       font-size: 0.8rem;
-      margin-right: 5px;
+      margin-right: 8px;
     }
     .location{
-      margin-right: 50px;
+      margin-right: 40px;
     }
   }
 
@@ -145,32 +147,37 @@
   }
   .right{
     .button_search{
-      font-size: 1.2rem;
-      background-color: $yellow;
-      color: white;
-      line-height: 16px;
-      padding: 10px;
-      border-radius: 50%;
-    }
-    .cart{
-      position: relative;
-      margin: 0 30px;
-      font-size: 1.4rem;
-      color: $green;
-      span{
-        font-size: 1.2rem;
-        position: absolute;
-        top: -10px;
-        right: -14px;
-        line-height: 10px;
-        color: white;
+      a{
         background-color: $yellow;
-        padding: 7px;
+        color: white;
         border-radius: 50%;
+        padding: 12px;
+        i{
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .cart {
+      a{
+        position: relative;
+        margin: 0 30px;
+        font-size: 1.4rem;
+        color: $green;
+        span{
+          font-size: 1.2rem;
+          position: absolute;
+          top: -10px;
+          right: -14px;
+          line-height: 10px;
+          color: white;
+          background-color: $yellow;
+          padding: 7px;
+          border-radius: 50%;
+        }
       }
     }
     .button_order{
-      button{
+      a button{
         font-size: 1.2rem;
         text-transform: uppercase;
         background-color: $yellow;
