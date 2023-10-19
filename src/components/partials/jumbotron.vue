@@ -15,7 +15,7 @@
 
 .jumbo_image{
   width: 100%;
-  height: 700px;
+  height: 850px;
   background-color: cadetblue;
 }
 </style>
