@@ -146,8 +146,12 @@
   </section>
 
   <section>
-    <div class="comment_manager">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere deserunt, officia sit quae est totam recusandae similique nam? Modi labore quidem asperiores saepe, dignissimos omnis eius incidunt blanditiis id!</p>
+    <div class="comment_manager text-center">
+      <img src="../assets/img/testi-icon.png" alt="">
+      <p>"Dessert pudding desset jelly beans sweet caramels gingebread. Fruitcake biscuit cheescake. <br>
+        Cookie topping sweets muffin pudding tart bear claw sugar plum croissant." We started as a small legal consultancy. We have proved oyr competence and had many satisfied clients.</p>
+      <span>martha alex</span><br>
+      <span>manager</span>
     </div>
   </section>
 
@@ -325,9 +329,33 @@
 
 .comment_manager{
   width: $container_min;
-  height: 250px;
   margin: 0 auto;
-  background-color: blueviolet;
+  margin-bottom: 100px;
+  img{
+    margin-top: 100px;
+    width: 80px;
+    height: 50px;
+  }
+  p{
+    font-size: 1.7rem;
+    width: 1000px;
+    margin: 0 auto;
+    color: black;
+    margin-bottom: 20px;
+  }
+  span{
+    text-transform: capitalize;
+    &:first-of-type{
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    &:last-of-type{
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $yellow;
+    }
+  }
+  
 }
 
 .offers{
