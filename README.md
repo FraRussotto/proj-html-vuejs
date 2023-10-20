@@ -7,5 +7,6 @@ Esercizio proj-html-vuejs
 3- Creazione markup grafico statico
 
 Cose ancora da fare dopo:
-1- Dropdown menu header
-2- Slider nel Jumbotron
+Mettere badge in trending organic - Fatto
+Dropdown menu header
+Slider nel Jumbotron

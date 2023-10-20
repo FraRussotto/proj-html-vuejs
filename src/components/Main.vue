@@ -68,6 +68,7 @@
           <div class="card_fr">
             <div class="card_image">
               <img src="../assets/img/s2.jpg" alt="">
+              <div class="badge_sale"><span>sale!</span></div>
             </div>
             <div class="card_info">
               <p>Fress Cobies</p>
@@ -88,6 +89,7 @@
           <div class="card_fr">
             <div class="card_image">
               <img src="../assets/img/s1.jpg" alt="">
+              <div class="badge_sale"><span>sale!</span></div>
             </div>
             <div class="card_info">
               <p>Organic Juice</p>
@@ -98,6 +100,7 @@
           <div class="card_fr">
             <div class="card_image">
               <img src="../assets/img/s4.jpg" alt="">
+              <div class="badge_sale"><span>sale!</span></div>
             </div>
             <div class="card_info">
               <p>Fresh Blueberries</p>
@@ -118,6 +121,7 @@
           <div class="card_fr">
             <div class="card_image">
               <img src="../assets/img/s9.jpg" alt="">
+              <div class="badge_sale"><span>sale!</span></div>
             </div>
             <div class="card_info">
               <p>Red Gajor</p>
@@ -269,9 +273,25 @@
       aspect-ratio: 1;
       margin-bottom: 50px;
       .card_image{
+        position: relative;
         width: 100%;
         img{
           width: 100%;
+        }
+        .badge_sale{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: white;
+          background-color: $yellow;
+          width: 60px;
+          height: 35px;
+          span{
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-top: 10px;
+            line-height: 35px;
+          }
         }
       }
       .card_info{
