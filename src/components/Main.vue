@@ -202,14 +202,50 @@
   </section>
 
   <section>
-    <div class="top_trending">
-      top_trending
+    <div class="top_trending text-center">
+      <div class="title">
+        <span>Running week top selling</span>
+        <h2>top <span>trending</span> organic food</h2>
+        <img src="../assets/img/title-shap.png" alt="">
+      </div>
+      <div class="list_trend">
+        <div class="d-flex justify-content-between">
+          <div class="card">
+            <img src="../assets/img/s5.jpg" alt="">
+            <span class="card_name">Fress Apple</span>
+            <span class="price">$18</span>
+          </div>
+          <div class="card">
+            <img src="../assets/img/s2.jpg" alt="">
+            <span class="card_name">Fress Apple</span>
+            <span class="price">$18</span>
+          </div>
+          <div class="card">
+            <img src="../assets/img/s8.jpg" alt="">
+            <span class="card_name">Fress Apple</span>
+            <span class="price">$18</span>
+          </div>
+          <div class="card">
+            <img src="../assets/img/s1.jpg" alt="">
+            <span class="card_name">Fress Apple</span>
+            <span class="price">$18</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section>
-    <div class="appointment">
-      appointment
+    <div class="appointment text-center">
+      <div class="text">
+        <span>here you can get 100% fresh organic food</span>
+        <h2>Best organic food up to 25% off for all product</h2>
+        <p>The most beatiful people we have known are those who have known defeat, known struggle, known loss, and have found their way out of those depths. The most beatiful people we have known are those who have known defeat, known suffering</p>
+      </div>
+      <div class="button">
+        <button class="btn"><i class="fa-solid fa-square-phone"></i><span>+088123 56 906</span></button>
+        <button class="btn">appointment</button>
+      </div>
     </div>
   </section>
 
@@ -460,16 +496,105 @@
 
 .top_trending{
   width: $container_min;
-  height: 400px;
   margin: 0 auto;
-  background-color: $lightgrey;
+  margin-bottom: 50px;
+  .title{
+    position: relative;
+    span{
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: $yellow;
+    }
+    h2{
+      font-size: 3.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $green;
+      span{
+        font-size: 3.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $yellow;
+      }
+    }
+    img{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      width: 140px;
+
+    }
+  }
+  .list_trend{
+    .card{
+      width: calc(25% - 25px);
+      border: 0;
+      box-shadow: 0px 0px 15px 0.5px rgba(206, 206, 206, 0.5);
+      .card_name{
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+  }
 }
+
 
 .appointment{
   width: $container_max;
-  height: 350px;
+  height: 450px;
   margin: 0 auto;
-  background-color: crimson;
+  background-image: url(../assets/img/call-to-bg.jpg);
+  background-size: cover;
+  padding: 100px;
+  color: white;
+  .text{
+    width: 70%;
+    margin: 0 auto;
+    span{
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    h2{
+      font-size: 3.4rem;
+      font-weight: 600;
+    }
+    p{
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+  .btn{
+    margin-top: 30px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-weight: 500;
+    &:first-of-type{
+      background-color: $yellow;
+      i{
+        margin-right: 5px;
+        font-size: 1.2rem;
+      }
+      &:hover{
+        background-color: $green;
+      }
+    }
+    &:last-of-type{
+      background-color: $green;
+      &:hover{
+        background-color: $yellow;
+      }
+    }
+  }
+  
+  
 }
 
 .last_feed{

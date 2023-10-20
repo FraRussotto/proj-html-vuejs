@@ -12,7 +12,7 @@ const slider = [
 
 const organic_food = [
   {
-    id: 1,
+    'id': 1,
     img: '../assets/img/fe1.jpg'
   },
   {
@@ -29,7 +29,7 @@ const organic_food = [
   }
   ],
 
-  trend_product = [
+const trend_product = [
     {
       id: '1',
       img: '../assets/img/s1.jpg',
@@ -86,8 +86,8 @@ const organic_food = [
       lastprice: '',
       sale: false
     },
-  ],
-  gallery = [
+  ]
+const gallery = [
     {
       id: '1',
       img: '../assets/img/blo1-150x150.jpg'
