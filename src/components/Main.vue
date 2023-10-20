@@ -178,8 +178,26 @@
   </section>
 
   <section>
-    <div class="results">
-      results
+    <div class="results d-flex justify-content-center align-items-center">
+      <div class="result">
+        <span>29+</span>
+        <span>Years of Experienced</span>
+      </div>
+      <img src="../assets/img/counter-shap1.png" alt="">
+      <div class="result">
+        <span>200+</span>
+        <span>everyday online delivery</span>
+      </div>
+      <img src="../assets/img/counter-shap1.png" alt="">
+      <div class="result">
+        <span>20k</span>
+        <span>client satysfaction</span>
+      </div>
+      <img src="../assets/img/counter-shap1.png" alt="">
+      <div class="result">
+        <span>30+</span>
+        <span>award winning</span>
+      </div>
     </div>
   </section>
 
@@ -413,9 +431,31 @@
 
 .results{
   width: $container_max;
-  height: 200px;
-  margin: 0 auto;
-  background-color: $green;
+  height: 300px;
+  margin: 150px auto;
+  background-image: url(../assets/img/counter-bg.jpg);
+  img{
+      margin: 0 50px;
+    }
+  .result{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    span{
+      &:first-of-type{
+        font-size: 5rem;
+        line-height: 5rem;
+        font-weight: 700;
+        color: $yellow;
+      }
+      &:last-of-type{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: white;
+        text-transform: capitalize;
+      }
+    }
+  }
 }
 
 .top_trending{
