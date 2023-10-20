@@ -157,7 +157,23 @@
 
   <section>
     <div class="offers">
-      offers
+
+        <div class="d-flex justify-content-between ">
+          <div class="offer">
+            <div class="text_offer">
+              <span>Fresh gurden tomato combo offer...$37</span>
+              <span>shop now</span>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="text_offer">
+              <span>Some organic healty fruits combo offer...$49</span>
+              <span>shop now</span>
+            </div>
+
+          </div>
+        </div>
+
     </div>
   </section>
 
@@ -360,9 +376,39 @@
 
 .offers{
   width: $container_min;
-  height: 250px;
   margin: 0 auto;
-  background-color: blue;
+  .offer{
+    width: 49%;
+    height: 280px;
+    background-color: $green;
+    padding: 25px 40px;
+    .text_offer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+      width: 75%;
+      height: 100%;
+      span:first-of-type{
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      span:last-of-type{
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+    }
+    &:first-of-type{
+      background-image: url(../assets/img/offer-img01.jpg);
+      background-size: cover;
+    }
+    &:last-of-type{
+      background-image: url(../assets/img/offer-img02.jpg);
+      background-size: cover;
+    }
+  }
 }
 
 .results{
