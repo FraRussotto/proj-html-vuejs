@@ -250,9 +250,68 @@
   </section>
 
   <section>
-    <div class="last_feed">
-      last_feed
-    </div>
+
+      <div class="last_feed text-center">
+        <div class="title">
+          <span>The news what we have</span>
+          <h2>gogrin latest <span>news</span> feed</h2>
+          <img src="../assets/img/title-shap.png" alt="">
+        </div>
+        <div class="card_container d-flex justify-content-between ">
+          <div class="card_latest_feed">
+            <img src="../assets/img/blo1-390x250.jpg" alt="">
+            <div class="info">
+              <i class="fa-solid fa-user"></i>
+              <span>Gogrin</span>
+              <i class="fa-regular fa-clock"></i>
+              <div class="date">17 Dec 2022</div>
+            </div>
+            <div class="text_feed">
+              <div class="title">
+                Where i live, i am surrounded by fresh, organic food, so i eat really well.
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit repellendus culpa! Similique ea distinctio atque architecto natus velit aut, vitae animi aliquid quia. Consequuntur.</p>
+              <span>read more....</span>
+
+            </div>
+          </div>
+          <div class="card_latest_feed">
+            <img src="../assets/img/blo2-390x250.jpg" alt="">
+            <div class="info">
+              <i class="fa-solid fa-user"></i>
+              <span>Gogrin</span>
+              <i class="fa-regular fa-clock"></i>
+              <div class="date">17 Dec 2022</div>
+            </div>
+            <div class="text_feed">
+              <div class="title">
+                What we get at home is 100% organic food. We are also 90% vegetarian.
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at sunt rerum blanditiis id obcaecati minus accusamus? Reiciendis tenetur cupiditate sunt consequuntur magnam ea ad!</p>
+              <span>read more....</span>
+
+            </div>
+          </div>
+          <div class="card_latest_feed">
+            <img src="../assets/img/blo3-390x250.jpg" alt="">
+            <div class="info">
+              <i class="fa-solid fa-user"></i>
+              <span>Gogrin</span>
+              <i class="fa-regular fa-clock"></i>
+              <div class="date">17 Dec 2022</div>
+            </div>
+            <div class="text_feed">
+              <div class="title">
+                Where i live, i am surrounded by fresh, organic food, so i eat really well.
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio eos exercitationem, odit ex dolorem omnis voluptatem dolor enim. Facilis reiciendis dignissimos eaque non dicta!</p>
+              <span>read more....</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
   </section>
 
   <section class="logo_subscribe">
@@ -497,9 +556,10 @@
 .top_trending{
   width: $container_min;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   .title{
     position: relative;
+    margin-bottom: 50px;
     span{
       font-size: 1.7rem;
       font-weight: 500;
@@ -599,9 +659,72 @@
 
 .last_feed{
   width: $container_min;
-  height: 400px;
   margin: 0 auto;
-  background-color: dodgerblue;
+  margin: 150px auto;
+  .title{
+    position: relative;
+    span{
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $yellow;
+    }
+    h2{
+      font-size: 3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $green;
+      span{
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $yellow;
+      }
+    }
+    img{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      width: 140px;
+
+    }
+  }
+  .card_latest_feed{
+    width: calc((100% - 50px) / 3);
+    img{
+      width: 100%;
+      height: 250px;
+    }
+    .info{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      color: darkgrey;
+      i{
+        color: $yellow;
+      }
+    }
+    .text_feed{
+      text-align: start;
+
+      .title{
+        color: $green;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      p{
+        color: darkgrey;
+        margin: 20px 0;
+      }
+      span{
+        color: $green;
+        text-transform: uppercase;
+      }
+    }
+  }
+
 }
 
 .logo_subscribe{
