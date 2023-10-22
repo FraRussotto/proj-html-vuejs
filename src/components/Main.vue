@@ -58,21 +58,24 @@ import card_offerVue from './partials/card_offer.vue';
 
   <section>
     <div class="results d-flex justify-content-center align-items-center">
-      <div class="result">
-        <span>29+</span>
-        <span>Years of Experienced</span>
+      <div class="wave d-flex">
+        <div class="result">
+          <span>29+</span>
+          <span>Years of Experienced</span>
+        </div>
       </div>
-      <img src="../assets/img/counter-shap1.png" alt="">
-      <div class="result">
-        <span>200+</span>
-        <span>everyday online delivery</span>
+      <div class="wave d-flex">
+        <div class="result">
+          <span>200+</span>
+          <span>everyday online delivery</span>
+        </div>
       </div>
-      <img src="../assets/img/counter-shap1.png" alt="">
-      <div class="result">
-        <span>20k</span>
-        <span>client satysfaction</span>
+      <div class="wave d-flex">
+        <div class="result">
+          <span>20k</span>
+          <span>client satysfaction</span>
+        </div>
       </div>
-      <img src="../assets/img/counter-shap1.png" alt="">
       <div class="result">
         <span>30+</span>
         <span>award winning</span>
@@ -350,15 +353,19 @@ import card_offerVue from './partials/card_offer.vue';
   height: 300px;
   margin: 150px auto;
   background-image: url(../assets/img/counter-bg.jpg);
-  img{
-      margin: 0 50px;
-    }
+  .wave::after{
+    content: url(../assets/img/counter-shap1.png);
+    margin: 0 50px;
+  }
   .result{
     text-align: center;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     span{
       &:first-of-type{
+        display: block;
         font-size: 5rem;
         line-height: 5rem;
         font-weight: 700;
