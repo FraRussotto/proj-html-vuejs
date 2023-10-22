@@ -30,6 +30,21 @@ export const store = reactive({
       img: '../../assets/img/fe1.jpg'
     }
     ],
+
+  combo_offer:[
+    {
+      id: 1,
+      text: 'Fresh gurden tomato combo offer...',
+      price: '$37',
+      img_bkg: '../../assets/img/offer-img01.jpg'
+    },
+    {
+      id: 2,
+      text: 'Some organic healty fruits combo offer...',
+      price: '$49',
+      img_bkg: '../../assets/img/offer-img02.jpg'
+    }
+  ],
   
   trend_product: [
       {
@@ -97,6 +112,7 @@ export const store = reactive({
         sale: false
       },
     ],
+
   gallery: [
       {
         id: 1,

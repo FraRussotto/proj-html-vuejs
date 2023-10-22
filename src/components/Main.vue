@@ -3,14 +3,17 @@
   import Jumbotron from './partials/jumbotron.vue';
   import look_organic from './partials/look_organic.vue';
   import trend_products from './partials/trend_products.vue';
+  import card_offer from './partials/card_offer.vue';
   import { store } from '../data/store';
+import card_offerVue from './partials/card_offer.vue';
 
   export default {
     name: 'Main',
     components:{
       Jumbotron,
       look_organic,
-      trend_products
+      trend_products,
+      card_offer
     },
     data(){
       return{
@@ -33,7 +36,6 @@
 
   <trend_products />
 
-
   <section>
     <div class="comment_manager text-center">
       <img src="../assets/img/testi-icon.png" alt="">
@@ -46,23 +48,11 @@
 
   <section>
     <div class="offers">
+        <div class="d-flex justify-content-between">
 
-        <div class="d-flex justify-content-between ">
-          <div class="offer">
-            <div class="text_offer">
-              <span>Fresh gurden tomato combo offer...$37</span>
-              <span>shop now</span>
-            </div>
-          </div>
-          <div class="offer">
-            <div class="text_offer">
-              <span>Some organic healty fruits combo offer...$49</span>
-              <span>shop now</span>
-            </div>
+          <card_offer />
 
-          </div>
         </div>
-
     </div>
   </section>
 
@@ -353,38 +343,6 @@
 .offers{
   width: $container_min;
   margin: 0 auto;
-  .offer{
-    width: 49%;
-    height: 280px;
-    background-color: $green;
-    padding: 25px 40px;
-    .text_offer{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: white;
-      width: 75%;
-      height: 100%;
-      span:first-of-type{
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
-      span:last-of-type{
-        font-size: 1.3rem;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-
-    }
-    &:first-of-type{
-      background-image: url(../assets/img/offer-img01.jpg);
-      background-size: cover;
-    }
-    &:last-of-type{
-      background-image: url(../assets/img/offer-img02.jpg);
-      background-size: cover;
-    }
-  }
 }
 
 .results{
