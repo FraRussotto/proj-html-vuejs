@@ -37,6 +37,7 @@
         </div>
       </div>
 
+      <img src="../assets/img/fe-shap1-1.png" alt="" class="image_allnatural">
     </div>
   </section>
 
@@ -250,7 +251,6 @@
   </section>
 
   <section>
-
       <div class="last_feed text-center">
         <div class="title">
           <span>The news what we have</span>
@@ -311,31 +311,27 @@
           </div>
         </div>
       </div>
-
   </section>
 
-  <section class="logo_subscribe">
+  <section class="logo_images">
     <div class="list_logo">
       <ul class="d-flex justify-content-between">
-        <a href="">
-          <li>logo</li>
+        <a href="#">
+          <li><img src="../assets/img/brand1.png" alt=""></li>
         </a>
-        <a href="">
-          <li>logo</li>
-        </a>
-        <a href="">
-          <li>logo</li>
-        </a>
-        <a href="">
-          <li>logo</li>
-        </a>
-        <a href="">
-          <li>logo</li>
+        <a href="#">
+          <li><img src="../assets/img/brand2.png" alt=""></li>
+        </a>        
+        <a href="#">
+          <li><img src="../assets/img/brand3.png" alt=""></li>
+        </a>        
+        <a href="#">
+          <li><img src="../assets/img/brand4.png" alt=""></li>
+        </a>        
+        <a href="#">
+          <li><img src="../assets/img/brand1.png" alt=""></li>
         </a>
       </ul>
-    </div>
-    <div class="subscribe">
-      subscribe
     </div>
   </section>
 
@@ -345,6 +341,7 @@
 
 @use '../scss/variables' as *;
 .look_organic{
+  position: relative;
   width: $container_min;
   margin: 0 auto;
   padding: 120px 0;
@@ -364,6 +361,11 @@
     padding-top: 15px;
     line-height: 27px;
     padding-right: 15px;
+  }
+  .image_allnatural{
+    position: absolute;
+    top: 120px;
+    right: -250px
   }
 }
 .trending_organic{
@@ -660,7 +662,7 @@
 .last_feed{
   width: $container_min;
   margin: 0 auto;
-  margin: 150px auto;
+  margin: 150px auto 100px auto;
   .title{
     position: relative;
     span{
@@ -727,22 +729,9 @@
 
 }
 
-.logo_subscribe{
-  position: relative;
+.logo_images{
   width: $container_min;
   margin: 0 auto;
-  .list_logo{
-    height: 200px;
-    background-color: darkslategray;
-  }
-  .subscribe{
-    position: absolute;
-    z-index: 999;
-    bottom: -50px;
-    width: 100%;
-    height: 100px;
-    background-color: mediumvioletred;
-  }
 }
 
 </style>
