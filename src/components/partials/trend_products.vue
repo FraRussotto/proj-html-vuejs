@@ -34,11 +34,15 @@ export default {
 
         <div v-for="item in store.trend_product" :key="item.id" class="card_fr">
           <div class="card_image">
-            <img :src="getImagePath(item.img)" alt="">
+            <img :src="getImagePath(item.img)" :alt="item.name">
+            <div v-if="item.sale" class="badge_sale">
+              <span>sale!</span>
+            </div>
           </div>
           <div class="card_info">
             <p>{{ item.name }}</p>
-            <span>${{ item.price }}</span>
+            <span v-if="item.sale" class="old">{{ item.oldprice }}</span>
+            <span class="last">{{ item.lastprice }}</span>
           </div>
         </div>
 
@@ -57,7 +61,6 @@ export default {
 .trending_organic{
   width: $container_max;
   margin: 0 auto;
-  background-color: brown;
   background-image: url('../../assets/img/shop-bg-img.jpg');
   background-size: cover;
   .fr_container{
@@ -128,6 +131,10 @@ export default {
           font-weight: 600;
           color: $yellow;
           margin-right: 5px;
+        }
+        .old{
+          text-decoration: line-through;
+          color: darken($yellow, 5%);
         }
       }
     }
