@@ -2,13 +2,15 @@
 
   import Jumbotron from './partials/jumbotron.vue';
   import look_organic from './partials/look_organic.vue';
+  import trend_products from './partials/trend_products.vue';
   import { store } from '../data/store';
 
   export default {
     name: 'Main',
     components:{
       Jumbotron,
-      look_organic
+      look_organic,
+      trend_products
     },
     data(){
       return{
@@ -26,113 +28,11 @@
 
 <template>
   <Jumbotron />
+
   <look_organic />
 
+  <trend_products />
 
-  <section>
-    <div class="trending_organic d-flex flex-column">
-      <div class="fr_container text-center">
-        <h4>trending online store</h4>
-        <h1>gogrin all <span>organic</span> food</h1>
-        <ul class="d-flex justify-content-center ">
-          <li>all product</li>
-          <li>apple</li>
-          <li>food</li>
-          <li>orange</li>
-          <li>vegetable</li>
-        </ul>
-
-        <div class="d-flex justify-content-between flex-wrap">
-
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s5.jpg" alt="">
-            </div>
-            <div class="card_info">
-              <p>Fress Apple</p>
-              <span>$18</span>
-            </div>
-          </div>
-
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s2.jpg" alt="">
-              <div class="badge_sale"><span>sale!</span></div>
-            </div>
-            <div class="card_info">
-              <p>Fress Cobies</p>
-              <span>$19</span><span>$17</span>
-            </div>
-
-          </div>
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s8.jpg" alt="">
-            </div>
-            <div class="card_info">
-              <p>Fresh Watermelon</p>
-              <span>$15</span>
-            </div>
-
-          </div>
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s1.jpg" alt="">
-              <div class="badge_sale"><span>sale!</span></div>
-            </div>
-            <div class="card_info">
-              <p>Organic Juice</p>
-              <span>$20</span><span>$15</span>
-            </div>
-
-          </div>
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s4.jpg" alt="">
-              <div class="badge_sale"><span>sale!</span></div>
-            </div>
-            <div class="card_info">
-              <p>Fresh Blueberries</p>
-              <span>$19</span><span>$14</span>
-            </div>
-
-          </div>
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s10.jpg" alt="">
-            </div>
-            <div class="card_info">
-              <p>Organic Letus</p>
-              <span>$23</span>
-            </div>
-
-          </div>
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s9.jpg" alt="">
-              <div class="badge_sale"><span>sale!</span></div>
-            </div>
-            <div class="card_info">
-              <p>Red Gajor</p>
-              <span>$29</span><span>$26</span>
-            </div>
-
-          </div>
-          <div class="card_fr">
-            <div class="card_image">
-              <img src="../assets/img/s7.jpg" alt="">
-            </div>
-            <div class="card_info">
-              <p>Naga Pepper</p>
-              <span>$21</span>
-            </div>
-
-          </div>
-        </div>
-        <button class="btn">all products</button>
-      </div>
-    </div>
-  </section>
 
   <section>
     <div class="comment_manager text-center">

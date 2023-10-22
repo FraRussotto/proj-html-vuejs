@@ -34,56 +34,64 @@ export const store = reactive({
   trend_product: [
       {
         id: 1,
-        img: '../assets/img/s1.jpg',
+        name: 'Orange juice',
+        img: '../../assets/img/s1.jpg',
         price: '20',
         lastprice: '15',
         sale: true
       },
       {
         id: 2,
-        img: '../assets/img/s2.jpg',
+        name: 'Fress Cobies',
+        img: '../../assets/img/s2.jpg',
         price: '19',
         lastprice: '17',
         sale: true
       },
       {
         id: 4,
-        img: '../assets/img/s4.jpg',
+        name: 'Fresh Blueberries',
+        img: '../../assets/img/s4.jpg',
         price: '19',
         lastprice: '14',
         sale: true
       },
       {
         id: 5,
-        img: '../assets/img/s5.jpg',
+        name: 'Fress Apple',
+        img: '../../assets/img/s5.jpg',
         price: '18',
         lastprice: '',
         sale: false
       },
       {
         id: 7,
-        img: '../assets/img/s7.jpg',
+        name: 'Naga Pepper',
+        img: '../../assets/img/s7.jpg',
         price: '21',
         lastprice: '',
         sale: false
       },
       {
         id: 8,
-        img: '../assets/img/s8.jpg',
+        name: 'Fresh Watermelon',
+        img: '../../assets/img/s8.jpg',
         price: '15',
         lastprice: '',
         sale: false
       },
       {
         id: 9,
-        img: '../assets/img/s9.jpg',
+        name: 'Red Gajor',
+        img: '../../assets/img/s9.jpg',
         price: '29',
         lastprice: '26',
         sale: true
       },
       {
         id: 10,
-        img: '../assets/img/s10.jpg',
+        name: 'Organic Letus',
+        img: '../../assets/img/s10.jpg',
         price: '23',
         lastprice: '',
         sale: false
