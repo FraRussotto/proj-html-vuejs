@@ -53,7 +53,8 @@ export const store = reactive({
         img: '../../assets/img/s1.jpg',
         oldprice: '$20',
         lastprice: '$15',
-        sale: true
+        sale: true,
+        sold: 202
       },
       {
         id: 2,
@@ -61,7 +62,8 @@ export const store = reactive({
         img: '../../assets/img/s2.jpg',
         oldprice: '$19',
         lastprice: '$17',
-        sale: true
+        sale: true,
+        sold: 267
       },
       {
         id: 4,
@@ -69,7 +71,8 @@ export const store = reactive({
         img: '../../assets/img/s4.jpg',
         oldprice: '$19',
         lastprice: '$14',
-        sale: true
+        sale: true,
+        sold: 404
       },
       {
         id: 5,
@@ -77,7 +80,8 @@ export const store = reactive({
         img: '../../assets/img/s5.jpg',
         oldprice: '',
         lastprice: '$18',
-        sale: false
+        sale: false,
+        sold: 477
       },
       {
         id: 7,
@@ -85,7 +89,8 @@ export const store = reactive({
         img: '../../assets/img/s7.jpg',
         oldprice: '',
         lastprice: '$21',
-        sale: false
+        sale: false,
+        sold: 500
       },
       {
         id: 8,
@@ -93,7 +98,8 @@ export const store = reactive({
         img: '../../assets/img/s8.jpg',
         oldprice: '',
         lastprice: '$15',
-        sale: false
+        sale: false,
+        sold: 315
       },
       {
         id: 9,
@@ -101,7 +107,8 @@ export const store = reactive({
         img: '../../assets/img/s9.jpg',
         oldprice: '$29',
         lastprice: '$26',
-        sale: true
+        sale: true,
+        sold: 390
       },
       {
         id: 10,
@@ -109,7 +116,8 @@ export const store = reactive({
         img: '../../assets/img/s10.jpg',
         oldprice: '',
         lastprice: '$23',
-        sale: false
+        sale: false,
+        sold: 451
       },
     ],
 
@@ -142,6 +150,8 @@ export const store = reactive({
         id: 9,
         img: '../assets/img/blo9-150x150.jpg'
       },
-    ]
+    ],
+
+    top_trending: []
 })
 

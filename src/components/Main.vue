@@ -4,8 +4,9 @@
   import look_organic from './partials/look_organic.vue';
   import trend_products from './partials/trend_products.vue';
   import card_offer from './partials/card_offer.vue';
+  import top_trending from './partials/top_trending.vue';
+
   import { store } from '../data/store';
-import card_offerVue from './partials/card_offer.vue';
 
   export default {
     name: 'Main',
@@ -13,7 +14,8 @@ import card_offerVue from './partials/card_offer.vue';
       Jumbotron,
       look_organic,
       trend_products,
-      card_offer
+      card_offer,
+      top_trending
     },
     data(){
       return{
@@ -92,7 +94,10 @@ import card_offerVue from './partials/card_offer.vue';
       </div>
       <div class="list_trend">
         <div class="d-flex justify-content-between">
-          <div class="card">
+          
+          <top_trending />
+
+          <!-- <div class="card">
             <img src="../assets/img/s5.jpg" alt="">
             <span class="card_name">Fress Apple</span>
             <span class="price">$18</span>
@@ -111,10 +116,11 @@ import card_offerVue from './partials/card_offer.vue';
             <img src="../assets/img/s1.jpg" alt="">
             <span class="card_name">Fress Apple</span>
             <span class="price">$18</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
+
   </section>
 
   <section>
