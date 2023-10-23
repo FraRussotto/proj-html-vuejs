@@ -5,6 +5,7 @@
   import trend_products from './partials/trend_products.vue';
   import card_offer from './partials/card_offer.vue';
   import top_trending from './partials/top_trending.vue';
+  import card_feed from './partials/card_feed.vue';
 
   import { store } from '../data/store';
 
@@ -15,7 +16,8 @@
       look_organic,
       trend_products,
       card_offer,
-      top_trending
+      top_trending,
+      card_feed
     },
     data(){
       return{
@@ -99,30 +101,9 @@
           
           <top_trending />
 
-          <!-- <div class="card">
-            <img src="../assets/img/s5.jpg" alt="">
-            <span class="card_name">Fress Apple</span>
-            <span class="price">$18</span>
-          </div>
-          <div class="card">
-            <img src="../assets/img/s2.jpg" alt="">
-            <span class="card_name">Fress Apple</span>
-            <span class="price">$18</span>
-          </div>
-          <div class="card">
-            <img src="../assets/img/s8.jpg" alt="">
-            <span class="card_name">Fress Apple</span>
-            <span class="price">$18</span>
-          </div>
-          <div class="card">
-            <img src="../assets/img/s1.jpg" alt="">
-            <span class="card_name">Fress Apple</span>
-            <span class="price">$18</span>
-          </div> -->
         </div>
       </div>
     </div>
-
   </section>
 
   <section>
@@ -147,57 +128,7 @@
           <img src="../assets/img/title-shap.png" alt="">
         </div>
         <div class="card_container d-flex justify-content-between ">
-          <div class="card_latest_feed">
-            <img src="../assets/img/blo1-390x250.jpg" alt="">
-            <div class="info">
-              <i class="fa-solid fa-user"></i>
-              <span>Gogrin</span>
-              <i class="fa-regular fa-clock"></i>
-              <div class="date">17 Dec 2022</div>
-            </div>
-            <div class="text_feed">
-              <div class="title">
-                Where i live, i am surrounded by fresh, organic food, so i eat really well.
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit repellendus culpa! Similique ea distinctio atque architecto natus velit aut, vitae animi aliquid quia. Consequuntur.</p>
-              <span>read more....</span>
-
-            </div>
-          </div>
-          <div class="card_latest_feed">
-            <img src="../assets/img/blo2-390x250.jpg" alt="">
-            <div class="info">
-              <i class="fa-solid fa-user"></i>
-              <span>Gogrin</span>
-              <i class="fa-regular fa-clock"></i>
-              <div class="date">17 Dec 2022</div>
-            </div>
-            <div class="text_feed">
-              <div class="title">
-                What we get at home is 100% organic food. We are also 90% vegetarian.
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at sunt rerum blanditiis id obcaecati minus accusamus? Reiciendis tenetur cupiditate sunt consequuntur magnam ea ad!</p>
-              <span>read more....</span>
-
-            </div>
-          </div>
-          <div class="card_latest_feed">
-            <img src="../assets/img/blo3-390x250.jpg" alt="">
-            <div class="info">
-              <i class="fa-solid fa-user"></i>
-              <span>Gogrin</span>
-              <i class="fa-regular fa-clock"></i>
-              <div class="date">17 Dec 2022</div>
-            </div>
-            <div class="text_feed">
-              <div class="title">
-                Where i live, i am surrounded by fresh, organic food, so i eat really well.
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio eos exercitationem, odit ex dolorem omnis voluptatem dolor enim. Facilis reiciendis dignissimos eaque non dicta!</p>
-              <span>read more....</span>
-            </div>
-
-          </div>
+          <card_feed />
         </div>
       </div>
   </section>
@@ -496,9 +427,11 @@
 .last_feed{
   width: $container_min;
   margin: 0 auto;
-  margin: 150px auto 100px auto;
+  margin: 150px auto 100px auto;    
+  }
   .title{
     position: relative;
+    margin-bottom: 50px;
     span{
       font-size: 1.6rem;
       font-weight: 500;
@@ -523,44 +456,11 @@
       z-index: -1;
       transform: translate(-50%, -50%);
       width: 140px;
+    }
+    
 
     }
   }
-  .card_latest_feed{
-    width: calc((100% - 50px) / 3);
-    img{
-      width: 100%;
-      height: 250px;
-    }
-    .info{
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 20px;
-      color: darkgrey;
-      i{
-        color: $yellow;
-      }
-    }
-    .text_feed{
-      text-align: start;
-
-      .title{
-        color: $green;
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-      p{
-        color: darkgrey;
-        margin: 20px 0;
-      }
-      span{
-        color: $green;
-        text-transform: uppercase;
-      }
-    }
-  }
-
 }
 
 .logo_images{
