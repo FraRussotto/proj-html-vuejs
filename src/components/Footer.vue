@@ -157,6 +157,9 @@ export default {
         a{
           color: white;
         }
+        &:hover{
+          background-color: $yellow;
+        }
       }
     }
   }
