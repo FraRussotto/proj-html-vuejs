@@ -57,7 +57,7 @@
     color: white;
     border-radius: 0 20px;
     margin-right: 20px;
-    &:last-child{
+    &:hover{
       background-color: $green;
     }
   }
