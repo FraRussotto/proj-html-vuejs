@@ -40,21 +40,83 @@
 
     <div class="header_bottom fr_container d-flex justify-content-between align-items-center">
       <div class="left d-flex align-items-center ">
+
         <div class="logo_header">
           <img src="../assets/img/logo.png" alt="">
         </div>
+
         <div class="menu_header">
-          <ul class="d-flex">
-              <li><a href="#">home<i class="fa-solid fa-chevron-down"></i></a></li>
-              <li><a href="#">about<i class="fa-solid fa-chevron-down"></i></a></li>
-              <li><a href="#">service</a></li>
-              <li><a href="#">portfolio<i class="fa-solid fa-chevron-down"></i></a></li>
-              <li><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a></li>
-              <li><a href="#">blog <i class="fa-solid fa-chevron-down"></i></a></li>
-              <li><a href="#">contact</a></li>
+          <ul class="d-flex align-items-center">
+
+            <li><div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>home</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home - 1</a></li>
+                <li><a class="dropdown-item" href="#">Home - 2</a></li>
+                <li><a class="dropdown-item" href="#">Home - 3</a></li>
+                <li><a class="dropdown-item" href="#">Home - Landing</a></li>
+                <li><a class="dropdown-item" href="#">Home - Video</a></li>
+              </ul>
+            </div></li>
+
+            <li><div class="dropdown">
+              <div class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>about</span>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About - 1</a></li>
+                <li><a class="dropdown-item" href="#">About - 2</a></li>
+                <li><a class="dropdown-item" href="#">About - 3</a></li>
+                <li><a class="dropdown-item" href="#">About - Landing</a></li>
+                <li><a class="dropdown-item" href="#">About - Video</a></li>
+              </ul>
+            </div></li>
+
+            <li><a href="#">service</a></li>
+            
+            <li><div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>portfolio</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Portfolio - 1</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio - 2</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio - 3</a></li>
+              </ul>
+            </div></li>
+
+            <li><div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>shop</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shop - 1</a></li>
+                <li><a class="dropdown-item" href="#">Shop - 2</a></li>
+                <li><a class="dropdown-item" href="#">Shop - 3</a></li>
+              </ul>
+            </div></li>
+
+            <li><div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>blog</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog - 1</a></li>
+                <li><a class="dropdown-item" href="#">Blog - 2</a></li>
+                <li><a class="dropdown-item" href="#">Blog - 3</a></li>
+                <li><a class="dropdown-item" href="#">About - Video</a></li>
+              </ul>
+            </div></li>
+
+            <li><a href="#">contact</a></li>
+
           </ul>
         </div>
+
       </div>
+
       <div class="right d-flex align-items-center">
           <div class="button_search">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -69,6 +131,7 @@
             <a href="#"><button class="btn">order now</button></a>
           </div>
       </div>
+      
     </div>
 
 </template>
@@ -132,14 +195,22 @@
       margin-left: 100px;
       ul{
         margin-bottom: 0;
-        a{
-          font-size: 1.1rem;
-          color: black;
-          text-transform: uppercase;
-          margin-right: 35px;
-          i{
-            margin-left: 10px;
-            font-size: 0.7rem;
+        li{
+          .drop:active{
+            border: 0;
+          }
+          .dropwdown-item{
+            background-color: white;
+            color: $yellow;
+          }
+          span, a{
+            font-size: 1.1rem;
+            color: black;
+            text-transform: uppercase;
+            margin: 0 5px;
+            i{
+              font-size: 0.7rem;
+            }
           }
         }
       }

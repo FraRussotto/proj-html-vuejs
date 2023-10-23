@@ -5,11 +5,11 @@ export const store = reactive({
   slider: [
     {
       id: 1,
-      img: '../assets/img/H3-slider3.jpg'
+      img: '../../assets/img/H3-slider3.jpg'
     },
     {
       id: 2,
-      img: '../assets/img/slider.jpg'
+      img: '../../assets/img/slider.jpg'
     }
   ],
 
