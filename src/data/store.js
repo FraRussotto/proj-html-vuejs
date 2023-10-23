@@ -174,12 +174,9 @@ export const store = reactive({
       id: 8,
       img: '../assets/img/blo8-150x150.jpg'
     },
-    {
-      id: 9,
-      img: '../assets/img/blo9-150x150.jpg'
-    },
   ],
 
-    top_trending: []
+  top_trending: [],
+  latest_blogs: []
 })
 

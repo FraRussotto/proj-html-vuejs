@@ -21,7 +21,6 @@ export default {
   },
   mounted(){
     this.getMaxSold();
-    // store.top_trending.length = 4;
   }
 
 

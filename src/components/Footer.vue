@@ -1,7 +1,24 @@
 <script>
-  export default {
-    name: 'Footer'
+import latest_blogs from './partials/latest_blogs.vue';
+
+import { store } from '../data/store';
+
+export default {
+  name: 'Footer',
+  components: { 
+  latest_blogs 
+  },
+  data(){
+    return{
+      store
+    }
+  },
+  methods:{
+    getImagePath(img){
+      return new URL(`${img}`, import.meta.url).href
+    }
   }
+}
 </script>
 
 <template>
@@ -44,33 +61,12 @@
             </ul>
           </div>
 
-          <div class="latest_blogs">
-            <h3>Our Latest Blog.</h3>
-            <div class="blog">
-              <img src="../assets/img/blo1-70x70.jpg" alt="">
-              <div class="preview">
-                <span class="title">Where i live, i am surrounded by fresh, organic food, so i eat really well.</span>
-                <div class="date">December 17, 2022</div>
-              </div>
-            </div>
-            <div class="blog">
-              <img src="../assets/img/blo3-70x70.jpg" alt="">
-              <div class="preview">
-                <span class="title">What we get at home is 100% organic food. We are also 90-5 vegetarian.</span>
-                <div class="date">December 16, 2022</div>
-              </div>
-            </div>
-          </div>
+          <latest_blogs class="latest_blogs"/>
 
           <div class="gallery">
             <h3>Our Gallery.</h3>
-            <div class="d-flex justify-content-between flex-wrap row-gap-3">
-              <img src="../assets/img/blo1-100x100.jpg" alt="">
-              <img src="../assets/img/blo2-100x100.jpg" alt="">
-              <img src="../assets/img/blo3-100x100.jpg" alt="">
-              <img src="../assets/img/blo4-100x100.jpg" alt="">
-              <img src="../assets/img/blo7-100x100.jpg" alt="">
-              <img src="../assets/img/blo8-100x100.jpg" alt="">
+            <div class="d-flex justify-content-between flex-wrap row-gap-2">
+              <img v-for="item in store.gallery" :key="item.id" :src="getImagePath(item.img)" alt="">
             </div>
           </div>
 
@@ -151,12 +147,12 @@
     ul{
       padding: 0;
       li{
-        width: 50px;
+        width: 40px;
         aspect-ratio: 1;
         background-color: $green;
         display: grid;
         place-items: center;
-        margin-right: 20px;
+        margin-right: 15px;
         border-radius: 5px;
         a{
           color: white;
@@ -166,7 +162,7 @@
   }
   .emergency_link{
     color: white;
-    width: 30%;
+    width: 35%;
     h3{
       font-size: 2rem;
       font-weight: bold;
@@ -182,39 +178,18 @@
     }
   }
   .latest_blogs{
-    color: white;
-    h3{
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    .blog{
-      margin-bottom: 20px;
-      display: flex;
-      align-items: start;
-      img{
-        width: 80px;
-        height: 80px;
-        margin-right: 20px;
-        padding-top: 10px;
-      }
-      .preview{
-        .title{
-          font-size: 1.5rem;
-          font-weight: 500;
-        }
-        .date{
-          font-size: 1.2rem;
-        }
-      }
-    }
+    width: 70%;
   }
   .gallery{
+    width: 55%;
     color: white;
     h3{
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 30px;
+    }
+    img{
+      width: 100px;
     }
   }
 

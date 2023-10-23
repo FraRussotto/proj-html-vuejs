@@ -460,8 +460,6 @@
     
 
     }
-  }
-}
 
 .logo_images{
   width: $container_min;
