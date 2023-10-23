@@ -78,9 +78,11 @@
           <span>client satysfaction</span>
         </div>
       </div>
-      <div class="result">
-        <span>30+</span>
-        <span>award winning</span>
+      <div class="wave d-flex">
+        <div class="result">
+          <span>30+</span>
+          <span>award winning</span>
+        </div>
       </div>
     </div>
   </section>
@@ -359,7 +361,7 @@
   height: 300px;
   margin: 150px auto;
   background-image: url(../assets/img/counter-bg.jpg);
-  .wave::after{
+  .wave:not(:last-child)::after{
     content: url(../assets/img/counter-shap1.png);
     margin: 0 50px;
   }
