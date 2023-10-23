@@ -53,11 +53,11 @@ export default {
           <div class="emergency_link">
             <h3>Emergency Link.</h3>
             <ul>
-              <li>organic food shop</li>
-              <li>our term & condition</li>
-              <li>gogrin faw section</li>
-              <li>our team member</li>
-              <li>our latest news feed</li>
+              <li><a href="#">organic food shop</a></li>
+              <li><a href="#">our term & condition</a></li>
+              <li><a href="#">gogrin faw section</a></li>
+              <li><a href="#">our team member</a></li>
+              <li><a href="#">our latest news feed</a></li>
             </ul>
           </div>
 
@@ -177,6 +177,9 @@ export default {
         font-size: 1.2rem;
         margin-bottom: 15px;
         text-transform: capitalize;
+        a{
+          color: white;
+        }
       }
     }
   }
@@ -193,6 +196,10 @@ export default {
     }
     img{
       width: 100px;
+      &:hover{
+        opacity: 0.6;
+        cursor: pointer;
+      }
     }
   }
 

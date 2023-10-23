@@ -23,11 +23,11 @@ export default {
       <h4>trending online store</h4>
       <h1>gogrin all <span>organic</span> food</h1>
       <ul class="d-flex justify-content-center ">
-        <li>all product</li>
-        <li>apple</li>
-        <li>food</li>
-        <li>orange</li>
-        <li>vegetable</li>
+        <li><a href="#">all product</a></li>
+        <li><a href="#">apple</a></li>
+        <li><a href="#">food</a></li>
+        <li><a href="#">orange</a></li>
+        <li><a href="#">vegetable</a></li>
       </ul>
 
       <div class="d-flex justify-content-between flex-wrap">
@@ -95,6 +95,14 @@ export default {
       padding: 0;
       li{
         margin: 0 35px;
+        font-size: 1.2rem;
+        a{
+          color: white;
+          &:hover{
+            color: $yellow;
+            text-decoration: underline;
+          }
+        }
       }
     }
     .card_fr{
@@ -178,7 +186,9 @@ export default {
     color: white;
     border-radius: 0 20px;
     margin-bottom: 100px;
-
+    &:hover{
+      background-color: $green;
+    }
     }
   }
 }

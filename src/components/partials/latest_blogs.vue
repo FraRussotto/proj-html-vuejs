@@ -73,6 +73,10 @@ export default {
         }
       }
     }
+    &:hover{
+      opacity: 0.8;
+      cursor: pointer;
+    }
   }
 
 </style>

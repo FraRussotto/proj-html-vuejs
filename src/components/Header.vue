@@ -14,11 +14,12 @@
         <div class="left d-flex">
           <div class="location">
             <i class="fa-solid fa-location-dot"></i>
-            <span>North baukhula, tala, USA</span>
+            <a href="#"><span>North baukhula, tala, USA</span></a>
           </div>
           <div class="email">
             <i class="fa-solid fa-envelope"></i>
-            <span>demo@example.com</span></div>
+            <a href="#"><span>demo@example.com</span></a>
+          </div>
         </div>
 
         <div class="right d-flex">
@@ -119,7 +120,7 @@
 
       <div class="right d-flex align-items-center">
           <div class="button_search">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="hover_fr"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
           <div class="cart d-flex">
             <a href="#">
@@ -128,7 +129,7 @@
             </a>
           </div>
           <div class="button_order">
-            <a href="#"><button class="btn">order now</button></a>
+            <a href="#"><button class="btn hover_fr">order now</button></a>
           </div>
       </div>
       
@@ -150,12 +151,17 @@
   background-color: $green;
 
   .left{
-    i{
-      font-size: 0.8rem;
-      margin-right: 8px;
-    }
-    .location{
-      margin-right: 40px;
+      a{
+        color: white;
+      }
+
+      i{
+        font-size: 0.8rem;
+        margin-right: 8px;
+      }
+      .location{
+        margin-right: 40px;
+      }
     }
   }
 
@@ -180,7 +186,6 @@
       }
     }
   }
-}
 
 .header_bottom{
   height: 100px;
@@ -196,16 +201,13 @@
       ul{
         margin-bottom: 0;
         li{
-          .drop:active{
-            border: 0;
-          }
           .dropwdown-item{
             background-color: white;
             color: $yellow;
           }
           span, a{
             font-size: 1.1rem;
-            color: black;
+            color: rgb(25, 25, 25);
             text-transform: uppercase;
             margin: 0 5px;
             i{
@@ -217,6 +219,9 @@
     }
   }
   .right{
+    .hover_fr:hover{
+      background-color: $green;
+    }
     .button_search{
       a{
         background-color: $yellow;

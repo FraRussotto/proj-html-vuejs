@@ -403,25 +403,15 @@
     border-radius: 8px;
     margin-right: 20px;
     font-weight: 500;
-    &:first-of-type{
-      background-color: $yellow;
-      i{
-        margin-right: 5px;
-        font-size: 1.2rem;
-      }
-      &:hover{
-        background-color: $green;
-      }
+    background-color: $yellow;
+    i{
+      margin-right: 5px;
+      font-size: 1.2rem;
     }
-    &:last-of-type{
+    &:hover{
       background-color: $green;
-      &:hover{
-        background-color: $yellow;
-      }
     }
   }
-  
-  
 }
 
 .last_feed{
