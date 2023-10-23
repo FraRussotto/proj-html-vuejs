@@ -48,7 +48,6 @@ export default {
   width: $container_min;
   margin: 0 auto;
   padding: 120px 0;
-  border: 2px solid black;
   span{
     color: $yellow;
   }

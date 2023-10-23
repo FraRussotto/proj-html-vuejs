@@ -38,6 +38,11 @@ export default {
             <div v-if="item.sale" class="badge_sale">
               <span>sale!</span>
             </div>
+            <div class="card_action d-flex">
+              <div class="save"><i class="fa-solid fa-heart"></i></div>
+              <div class="add_cart"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="watch"><i class="fa-solid fa-eye"></i></div>
+            </div>
           </div>
           <div class="card_info">
             <p>{{ item.name }}</p>
@@ -99,6 +104,7 @@ export default {
       .card_image{
         position: relative;
         width: 100%;
+        overflow: hidden;
         img{
           width: 100%;
         }
@@ -116,6 +122,32 @@ export default {
             padding-top: 10px;
             line-height: 35px;
           }
+        }
+        .card_action{
+          position: absolute;
+          bottom: -40px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: bottom .5s;
+          & > *{
+            color: $green;
+            background-color: rgb(252, 252, 252);
+            border-radius: 50%;
+            margin: 0 5px;
+            &:hover{
+              color: white;
+              background-color: $yellow;
+              cursor: pointer;
+            }
+            i{
+              font-size: 1.5rem;
+              padding: 8px;
+            }
+          }
+        }
+        &:hover .card_action{
+          bottom: 10px
+          
         }
       }
       .card_info{
